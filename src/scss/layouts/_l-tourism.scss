@@ -1,0 +1,57 @@
+.l-tourism {
+    background: url("#{$img-path}/tourism.jpg") no-repeat center center;
+    background-size: cover;
+    justify-content: space-between;
+    .l-home-title {
+        max-width: 550px;
+        padding: 2em;
+        margin: auto;
+        position: relative;
+        border-top: 1px solid #fff;
+        &:after,
+        &:before {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            width: 1px;
+            background-image: linear-gradient( 0deg, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 100%);
+        }
+        &:before {
+            right: auto;
+            left: 0;
+        }
+    }
+}
+
+.l-tourism__bottom {
+    .row {
+        align-items: flex-end;
+        @include breakpoint(isCommon){
+            flex-wrap: nowrap;
+            overflow: auto;
+        }
+    }
+    .card__image {
+        >img {
+            max-height: 145px;
+        }
+    }
+    .card--absolute .card__content {
+        padding: 2% 6%;
+    }
+    .card__content {
+        padding: 2em;
+        font-size: 1rem;
+        @include breakpoint(isCommon) {
+            opacity: 1;
+            visibility: visible;
+            max-height: 600px;
+            padding: 1em;
+            font-size: 1.12rem;
+            color: #000;
+            margin-bottom: 20px;
+        }
+    }
+}

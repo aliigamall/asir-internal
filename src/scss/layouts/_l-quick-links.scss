@@ -1,0 +1,90 @@
+.l-quick-links {
+    background: url("#{$img-path}/mountains-gradient.jpg") no-repeat center center;
+    background-size: cover;
+    padding: 50px 0;
+
+    @include breakpoint(isMobile){
+        display: inline-block;
+    }
+
+    .col{
+        @include breakpoint(isCommon){
+            float: $left;
+            flex: 0 0 50%;
+            max-width: 50%;
+            margin: 30px 0;
+        }
+    }
+}
+
+.quick-links,
+.quick-links:visited {
+    color: #fff;
+    fill: #fff;
+    font-size: rem(25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 700;
+    & a:visited {
+        color: #fff;
+    }
+    @include transition();
+    &:hover {
+        text-decoration: none;
+        color: $color-primary;
+        fill: $color-primary;
+    }
+}
+
+.quick-links__icon {
+    width: rem(70);
+    height: rem(70);
+    fill: inherit;
+    margin-bottom: 15px;
+}
+
+.cbq-layout-main { 
+    li.dfwp-item {
+        &:last-child {
+            .related-links {
+                border-bottom: 0;
+            }
+        }
+
+        &:nth-child(odd) {
+            .related-links {
+                background: #f9f9f9;
+            }
+        }
+    }
+
+    
+}
+
+.related-links {
+    padding: 8px 10px;
+    border-bottom: 1px solid #e7e7e7;
+    width: 100%;
+    a {
+        color: #368f66;
+        &:hover {
+            transition: all .3s ease-in-out;
+            -webkit-transition: all .3s ease-in-out;
+            -moz-transition: all .3s ease-in-out;
+            -ms-transition: all .3s ease-in-out;
+            color: #333;
+            text-decoration: none;
+        }
+        span {
+            font-size: 0.94rem;
+            font-weight: 700;
+        }
+        i {
+            margin-#{$right}: 10px;
+            float: $left;
+            margin-top: 7px;
+            font-size: 20px;
+        }
+    }
+}

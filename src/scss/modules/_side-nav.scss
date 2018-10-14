@@ -1,0 +1,102 @@
+.side-nav {    
+    min-width: 250px;
+    padding-#{$right}: 30px;
+    @include breakpoint(isMobile){
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        height: 100%;
+        padding: 110px 35px 30px 35px;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 10;
+        transform: translate(-100%, 0);
+        transition: all 0.3s ease;
+    }
+    @include breakpoint(large){
+        padding-#{$right}: 80px;
+        min-width: 320px;
+    }
+    .global-menu__close{
+        display: none;
+        @include breakpoint(isMobile){
+            display: flex;
+            #{$left}: auto;
+            #{$right}: 0;
+        }
+    }
+    &.is-open{
+        opacity: 1;
+        visibility: visible;
+        transform: translate(0, 0);
+    }
+    li{
+        list-style: none;
+    }
+    .ms-core-listMenu-verticalBox{
+        a{
+            &.static{
+                color: #868686;
+                padding: 0 0 20px 0 ;
+                margin-bottom: 15px;
+                border-bottom: 1px solid #d8d2c4;
+                font-family: $font-family ;
+                font-size: 15px;
+                font-weight: 700;
+                transition: all .2s ease-in-out;
+                background: none;
+                width: auto;
+                display: flex;
+                &:hover{
+                    color: $color-secondary;
+                    background: none;
+                }
+            }
+            &.selected{
+                color: $color-secondary;
+                background: none;
+            }
+        }
+    }
+    ul {
+        padding: 0;
+        li {
+            a {
+                color: #868686;
+                padding-bottom: 20px;
+                margin-bottom: 15px;
+                display: inline-block;
+                border-bottom: 1px solid #d8d2c4;
+                width: 70%;
+                font-size: 15px;
+                font-weight: 700;
+                transition: all .2s ease-in-out;
+            }
+            &.active {
+                a {
+                    color: #00864f;
+                    &::before {
+                        content: "\f0d9" !important;
+                        color: #fcbb0c;
+                        font: normal normal normal 14px/1 FontAwesome;
+                        font-size: inherit;
+                        text-rendering: auto;
+                        -webkit-font-smoothing: antialiased;
+                        -moz-osx-font-smoothing: grayscale;
+                        float: $left;
+                        margin-top: 6px;
+                        margin-#{$right}: 10px;
+                    }
+                }
+            }
+            &:hover {
+                a {
+                    color: #00864f;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
