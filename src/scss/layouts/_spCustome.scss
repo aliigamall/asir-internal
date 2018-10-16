@@ -90,3 +90,8 @@ a:visited {
     margin-top: 40px;
     border: 1px dashed #a7a7a7;
 }
+.l-body-main{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}

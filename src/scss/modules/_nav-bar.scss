@@ -1,7 +1,7 @@
 .nav-bar{
     background-color: $nav-bar--bg;
     padding: $nav-bar--padding;
-    font-size: rem(16);
+    font-size: rem(16);    
     &--center{
         display: flex;
         justify-content: center;
@@ -36,9 +36,9 @@
         }
     }
 }
-.nav-bar__login{
+// .nav-bar__login{
     
-}
+// }
 
 .nav-bar__menu-link{
     color: $menu-link-color;

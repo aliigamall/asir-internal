@@ -5,6 +5,7 @@
 @import "./base/mixins";
 @import "./vendors/bootstrap/mixins";
 @import "./base/fonts";
+@import "./layouts/spCustome";
 // @import "./vendors/bootstrap/root";
 // @import "./vendors/bootstrap/print";
 @import "./vendors/bootstrap/reboot";
@@ -39,12 +40,11 @@
 // @import "./vendors/bootstrap/carousel";
 // @import "./vendors/swiper";
 // @import "./vendors/fontaswesome/fontawesome-all.min";
-// @import "./layouts/spCustome";
-// @import "./vendors/bootstrap/utilities";
-// @import "./base/utilities";
-// @import "./modules/buttons";
+@import "./vendors/bootstrap/utilities";
+@import "./base/utilities";
+@import "./modules/buttons";
 // @import "./layouts/grids";
-// @import "./layouts/l-home";
+@import "./layouts/l-home";
 // @import "./layouts/l-discover-aseer";
 // @import "./layouts/l-ideas";
 // @import "./layouts/l-tourism";
@@ -53,13 +53,13 @@
 // @import "./layouts/l-quick-links";
 // @import "./layouts/l-inner-pages";
 // @import "./layouts/l-sideImg";
-// @import "./modules/main-header";
+@import "./modules/main-header";
 // @import "./modules/faq";
-// @import "./modules/main-footer";
-// @import "./modules/nav-bar";
-// @import "./modules/vertical-nav";
+@import "./modules/main-footer";
+@import "./modules/nav-bar";
+@import "./modules/vertical-nav";
 // @import "./modules/card";
-// @import "./modules/icons";
+@import "./modules/icons";
 // @import "./modules/socials-bar";
 // @import "./modules/side-nav";
 // @import "./modules/events";
@@ -69,7 +69,7 @@
 // @import "./modules/weather-condition";
 // @import "./modules/media-galleries";
 // @import "./modules/welcome";
-// @import "./modules/welcome-links";
+@import "./modules/welcome-links";
 // @import "./modules/fab";
 // @import "./modules/main-title";
 // @import "./modules/tabs";
@@ -78,7 +78,7 @@
 // @import "./modules/media-center";
 // @import "./modules/sideLinks";
 // @import "./base/m_p_helper";
-// @import "./modules/global-menu";
+@import "./modules/global-menu";
 // @import "./modules/tables";
 // @import "./modules/media-print";
 // @import "./modules/service-details";
@@ -90,7 +90,7 @@
 // @import "./modules/socials-header";
 // @import "./modules/voting";
 // @import "./modules/radios";
-// @import "./modules/search-box";
+@import "./modules/search-box";
 // @import "./modules/municipalities";
 
  
