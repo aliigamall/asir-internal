@@ -9,7 +9,7 @@
 //      float: $left;
 //      display: block;
 //      > a{
-//          color: #fff;
+//          color: #000;
 //          display: inline-block;
 //      }
 //  }
@@ -17,13 +17,13 @@
 //      display: inline-flex;
 //      padding-right: .5rem;
 //      padding-left: .5rem;
-//      color: #fff;
+//      color: #000;
 //      content: ">";
 //      display: block;
 //      float: $left;
 //  }
 //  .active{
-//      color: #fff;
+//      color: #000;
 //      font-weight: 900;
 //      display: block;
 //  }
@@ -31,32 +31,38 @@
 
 
 .breadcrumb {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $color-secondary;
     // margin-#{$left}: 45px;
     display: inline-block;
     width: 100%;
-    @include breakpoint(large){
-        margin-top: 60px;
-        margin-bottom: 40px;
-    }
+    // @include breakpoint(large){
+    //     margin-top: 60px;
+    //     margin-bottom: 40px;
+    // }
     >span {
         a {
-            color: rgba(255, 255, 255, 0.8);
+            color: rgba(#000, 0.8);
             font-size: 14px;
             display: inline-block;
         }
         &:nth-child(2n) {
             padding-right: .5rem;
             padding-left: .5rem;
-            color: #fff;
+            color: #000;
             position: relative;
             top: 2px;
         }
     }
     .current {
-        color: #fff;
+        color: #000;
         font-weight: 700;
         font-size: 14px;
     }
 } 
+
+.MySiteMap{
+    @extend .breadcrumb;
+}

@@ -1,3 +1,7 @@
+.l-container{
+    display: flex;
+    padding: 5vh 15px;
+}
 .l-home-grid{
     margin-top: 30px;
     max-width: 1140px;
@@ -22,4 +26,21 @@
     &--darkorange{
         background-color: rgba(#a26316, 0.5);
     }
+}
+
+.home-prayer-time {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1px 1px;
+    grid-template-areas: ". . ." ". . .";
+    align-items: center;
+    justify-items: center;
+    color: #fff;
+    background-color: rgba(5, 123, 68, 0.1);
+    height: 145px;
+}
+.prayer-time__grid-item{
+    text-align: center;
 }

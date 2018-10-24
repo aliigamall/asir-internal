@@ -3,6 +3,7 @@
     padding: $header-padding;
     box-shadow: 0 1px 3px 1px rgba(255, 255, 255, 0.28); 
     background: rgba(255, 255, 255, 0.1);
+    background-color: #198076;
     &--absolute,
     &--fixed {
         position: absolute;
@@ -105,5 +106,24 @@
         left: auto;
         padding: 5px 40px;
         transform: rotate(45deg) translate(44px, -20px);
+    }
+}
+.main-title{
+    color: #000;
+    width: 100%;
+    position: relative;
+    font-weight: 700;
+    font-size: 3rem;
+    margin-bottom: 30px;
+    &:before {
+        content: '';
+        width: 5%;
+        height: 6px;
+        background: #fecd08;
+        display: inline-block;
+        border-radius: 1em;
+        margin-top: 0;
+        margin-left: 10px;
+        position: relative;
     }
 }

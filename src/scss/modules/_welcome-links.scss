@@ -20,7 +20,10 @@ $link-height: 150px !default;
         .welcome-links__icon{
             width: 35px;
             height: 35px;
-        }
+        }        
+    }
+    &--no-padding{
+        padding: 0;
     }
     @include breakpoint(isMobile) {
         height: 100px;

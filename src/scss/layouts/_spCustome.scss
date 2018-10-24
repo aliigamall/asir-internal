@@ -93,5 +93,47 @@ a:visited {
 .l-body-main{
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: calc(100vh - 66px);
+}
+.AddFavoriteLinks{
+    display: none;
+}
+
+.CQWPPager{
+    div{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+        padding: 0;
+        font-family: sans-serif;
+        padding-left: 0;
+        list-style: none;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    a, strong{
+        position: relative;
+        display: block;
+        margin-left: -1px;
+        color: #333;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        padding: 0.25rem 0.5rem;
+        font-size: 0.875rem;
+        line-height: 1.5;
+        @include transition();
+        &:hover{
+            color: #fff;
+            background-color: #fecd08;
+            text-decoration: none;
+        }
+    }
+    strong{
+        z-index: 2;
+        color: #fff;
+        background-color: #fecd08;
+        border-color: #fecd08;
+        font-weight: 400;
+    }
 }
