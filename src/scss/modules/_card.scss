@@ -65,8 +65,15 @@
 
 .card--horizontal {
     flex-direction: row;
-    .card__image>img {
+    .card__content{
+        flex: 1;
+    }
+    .card__image{
+        width: 250px;
+    }
+    .card__image img {
         min-height: 100%;
+        width: 100%;
     }
 }
 

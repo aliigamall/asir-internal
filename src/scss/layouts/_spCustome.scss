@@ -137,3 +137,80 @@ a:visited {
         font-weight: 400;
     }
 }
+
+.SubPagesTopTitleTwo{
+    @extend .typo-headline;
+}
+.contact-directory-notetext {
+    margin-bottom: 30px;
+    background-color: #f1f1f1;
+    padding: 20px 25px;
+}
+
+.big-letter-div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    input.letter {
+        border: 0;
+        background: $color-secondary;
+        font-family: $font-family;
+        color: #fff;
+        min-width: 30px;
+        padding: 0;
+        height: 30px;
+        font-size: 14px;
+        cursor: pointer;
+        margin: 0 0 5px 0 ;
+        @include transition();
+        &:hover{
+            background: $color-primary;
+        }
+    }
+}
+.bgFQ{
+    .panel-title {
+        font-size: 20px;
+        color: $color-secondary;
+        margin-bottom: 20px;
+        a{
+            cursor: text;
+            &:hover{
+                text-decoration: none;
+                color: inherit;
+            }
+        }
+    }
+    .panel-group .panel-body .panel-title {
+        color: #333;
+        font-size: 18px;
+        a{
+            cursor: text;
+            &:hover{
+                text-decoration: none;
+                color: inherit;
+            }
+        }
+    }
+    .panel-group .panel-group{
+        padding: 10px;
+        background-color: #fff;
+        color: #4e4e4e;
+        padding: 1em;
+        line-height: 1.7;
+        font-size: 0.875rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0.035px 0.999px 6px 0px rgba(0, 0, 0, 0.29);
+        margin-bottom: 20px;
+    }
+
+}
+
+.ThereIsNoData2 {
+    background: #f78282;
+    padding: 15px;
+    margin-bottom: 25px;
+}
